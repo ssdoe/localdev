@@ -13,6 +13,6 @@
         "titleBar.activeForeground": "#fff"
     },
     "[nunjucks]": {
-        "editor.defaultFormatter": "mblode.pretty-formatter"
+        "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
     }
 }

@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ site.title }} - {{ title or meta.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.title }} - {{ title or meta.title }}</title>
 
-    {% include "meta.njk" %}
-  </head>
+  <link rel="stylesheet" href="{{ '/dist/app.css' | url }}" />
 
-  <body>
-    <!-- skiplinks -->
-    {# <a href="#main" class="visually-hidden-focusable">Skip to main content</a> #}
+  {% include "meta.njk" %}
+</head>
 
-    {% include "header.njk" %}
+<body>
+  <!-- skiplinks -->
+  {# <a href="#main" class="visually-hidden-focusable">Skip to main content</a> #}
 
-    <main id="main">
-      <div class="container py-4">
-        {{ content | safe }}
+  {% include "header.njk" %}
 
-        <div id="result"></div>
-      </div>
-    </main>
+  <main id="main">
+    <div class="container py-4">
+      {{ content | safe }}
+      <code>
+          <pre id="result"></pre>
+        </code>
+    </div>
+  </main>
 
-    {% include "footer.njk" %}
-    <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
-  </body>
+  {% include "footer.njk" %}
+  <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
+</body>
+
 </html>

@@ -21,7 +21,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/connecting-playgroup-and-school",
-            "name": "Connecting playgroup and\n school"
+            "name": "Connecting playgroup and school"
           },
           {
             "url": "http://dev-www.education.internal:17380/triple-p",
@@ -35,7 +35,7 @@
       },
       {
         "url": "http://dev-www.education.internal:17380/western-australian-curriculum",
-        "name": "Western Australian\n Curriculum"
+        "name": "Western Australian Curriculum"
       },
       {
         "url": "http://dev-www.education.internal:17380/choosing-a-public-school",
@@ -47,11 +47,11 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/education-support-centres-and-schools",
-            "name": "Education support\n centres and schools"
+            "name": "Education support centres and schools"
           },
           {
             "url": "http://dev-www.education.internal:17380/language-development-schools-and-centres",
-            "name": "Language\n development schools and centres"
+            "name": "Language development schools and centres"
           },
           {
             "url": "http://dev-www.education.internal:17380/senior-colleges",
@@ -73,11 +73,11 @@
       },
       {
         "url": "http://dev-www.education.internal:17380/alternatives-to-full-time-schooling",
-        "name": "Alternatives to\n full-time schooling",
+        "name": "Alternatives to full-time schooling",
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/alternatives-to-full-time-schooling/employing-young-people",
-            "name": "Employing\n young people"
+            "name": "Employing young people"
           }
         ]
       },
@@ -91,19 +91,19 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/how-to-enrol-a-step-by-step-guide",
-            "name": "How to enrol - a step\n by step guide"
+            "name": "How to enrol - a step by step guide"
           },
           {
             "url": "http://dev-www.education.internal:17380/enrolment-questions-answered",
-            "name": "Enrolment questions\n answered"
+            "name": "Enrolment questions answered"
           },
           {
             "url": "http://dev-www.education.internal:17380/families-new-to-western-australia",
-            "name": "Families new to\n Western Australia"
+            "name": "Families new to Western Australia"
           },
           {
             "url": "http://dev-www.education.internal:17380/western-suburbs-local-intake-areas",
-            "name": "Western suburbs\n local-intake areas"
+            "name": "Western suburbs local-intake areas"
           }
         ]
       },
@@ -117,18 +117,18 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/premiers-anzac-student-tour",
-            "name": "Premier's Anzac Student\n Tour",
+            "name": "Premier's Anzac Student Tour",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/2022-anzac-tour",
-                "name": "2022 Premier's Anzac Student\n Tour"
+                "name": "2022 Premier's Anzac Student Tour"
               },
               {
                 "url": "http://dev-www.education.internal:17380/2023-anzac-tour",
-                "name": "2023 Premier's Anzac Student\n Tour"
+                "name": "2023 Premier's Anzac Student Tour"
               },
               {
                 "url": "http://dev-www.education.internal:17380/previous-anzac-tours",
@@ -153,7 +153,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/awards-write-your-nomination",
-                "name": "Write your\n nomination"
+                "name": "Write your nomination"
               },
               {
                 "url": "http://dev-www.education.internal:17380/awards-terms-and-conditions",
@@ -227,7 +227,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/attendance-support-from-your-school",
-                "name": "Support from\n your school"
+                "name": "Support from your school"
               }
             ]
           },
@@ -295,7 +295,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/stem-in-the-wa-curriculum",
-                "name": "STEM in the WA\n Curriculum"
+                "name": "STEM in the WA Curriculum"
               }
             ]
           },
@@ -308,21 +308,21 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/gifted-and-talented/programs-and-opportunities",
-                "name": "Programs\n and opportunities"
+                "name": "Programs and opportunities"
               },
               {
                 "url": "http://dev-www.education.internal:17380/gifted-and-talented/application-process",
-                "name": "Application\n process"
+                "name": "Application process"
               },
               {
                 "url": "http://dev-www.education.internal:17380/key-dates-and-application-guidelines",
-                "name": "Testing\n information for 2022"
+                "name": "Testing information for 2022"
               }
             ]
           },
           {
             "url": "http://dev-www.education.internal:17380/approved-specialist-programs",
-            "name": "Approved Specialist\n Programs"
+            "name": "Approved Specialist Programs"
           },
           {
             "url": "http://dev-www.education.internal:17380/instrumental-music",
@@ -333,7 +333,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/instrumental-music/student-selection-and-commitment",
-                "name": "Student\n selection and commitment"
+                "name": "Student selection and commitment"
               },
               {
                 "url": "http://dev-www.education.internal:17380/instrumental-music/music-program",
@@ -341,11 +341,11 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/instrumental-music/instruments-and-equipment",
-                "name": "Instruments\n and equipment"
+                "name": "Instruments and equipment"
               },
               {
                 "url": "http://dev-www.education.internal:17380/instrumental-music/events-and-key-dates",
-                "name": "Events and\n key dates"
+                "name": "Events and key dates"
               }
             ]
           }
@@ -368,7 +368,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-development/start-a-conversation",
-                "name": "Start a\n conversation"
+                "name": "Start a conversation"
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-development/wace",
@@ -376,11 +376,11 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-devlopment/making-choices-for-years-11-and-12",
-                "name": "Making\n choices for Years 11 and 12"
+                "name": "Making choices for Years 11 and 12"
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-development/pathways-to-university",
-                "name": "Pathways\n to university"
+                "name": "Pathways to university"
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-development/vet",
@@ -388,27 +388,27 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-development/apprenticeships-and-traineeships",
-                "name": "Apprenticeships\n and traineeships"
+                "name": "Apprenticeships and traineeships"
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-devlopment/engaging-in-the-world-of-work",
-                "name": "Engaging\n in the world of work"
+                "name": "Engaging in the world of work"
               }
             ]
           },
           {
             "url": "http://dev-www.education.internal:17380/career-development/individual-pathway-planning",
-            "name": "Individual\n pathway planning"
+            "name": "Individual pathway planning"
           }
         ]
       },
       {
         "url": "http://dev-www.education.internal:17380/student-health-and-wellbeing",
-        "name": "Student health and\n wellbeing",
+        "name": "Student health and wellbeing",
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/progressing-through-school",
-            "name": "Progressing through\n school"
+            "name": "Progressing through school"
           },
           {
             "url": "http://dev-www.education.internal:17380/student-health-care",
@@ -461,11 +461,11 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/countering-violent-extremism",
-            "name": "Countering violent\n extremism"
+            "name": "Countering violent extremism"
           },
           {
             "url": "http://dev-www.education.internal:17380/bushfire-crisis-support-resources",
-            "name": "Bushfire crisis\n support resources"
+            "name": "Bushfire crisis support resources"
           }
         ]
       },
@@ -482,11 +482,11 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/aedc-resources-for-families",
-                "name": "AEDC resources for\n families and communities"
+                "name": "AEDC resources for families and communities"
               },
               {
                 "url": "http://dev-www.education.internal:17380/aedc-resources-for-educators",
-                "name": "AEDC resources for\n leaders and educators"
+                "name": "AEDC resources for leaders and educators"
               }
             ]
           },
@@ -506,11 +506,11 @@
       },
       {
         "url": "http://dev-www.education.internal:17380/children-with-special-educational-needs",
-        "name": "Children with\n special educational needs",
+        "name": "Children with special educational needs",
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/service-providers-in-schools",
-            "name": "Service providers in\n schools"
+            "name": "Service providers in schools"
           }
         ]
       },
@@ -531,7 +531,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/vacswim-swimming-stages-and-awards",
-                "name": "Swimming stages\n and awards"
+                "name": "Swimming stages and awards"
               },
               {
                 "url": "http://dev-www.education.internal:17380/enrolling-in-vacswim",
@@ -539,7 +539,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/vacswim-frequently-asked-questions",
-                "name": "VacSwim\n frequently asked questions"
+                "name": "VacSwim frequently asked questions"
               }
             ]
           },
@@ -556,21 +556,21 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/swimming-instructor-resources",
-                "name": "Swimming instructor\n resources"
+                "name": "Swimming instructor resources"
               },
               {
                 "url": "http://dev-www.education.internal:17380/swimming-instructor-frequently-asked-questions",
-                "name": "Swimming\n instructor frequently asked questions"
+                "name": "Swimming instructor frequently asked questions"
               }
             ]
           },
           {
             "url": "http://dev-www.education.internal:17380/become-a-swimming-instructor",
-            "name": "Become a swimming\n instructor"
+            "name": "Become a swimming instructor"
           },
           {
             "url": "http://dev-www.education.internal:17380/contact-us-for-swimming-enquiries",
-            "name": "Contact us for\n swimming enquiries"
+            "name": "Contact us for swimming enquiries"
           }
         ]
       }
@@ -598,7 +598,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/rural-regional-and-remote",
-            "name": "Teach in rural, regional and\n remote WA",
+            "name": "Teach in rural, regional and remote WA",
             "children": [
               {
                 "name": ""
@@ -613,7 +613,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/teacher-housing-and-transport-assistance",
-                "name": "Teacher\n housing and transport assistance"
+                "name": "Teacher housing and transport assistance"
               },
               {
                 "url": "http://dev-www.education.internal:17380/teacher-flying-squad",
@@ -623,7 +623,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/explore-teaching-careers-events",
-            "name": "Teaching career\n events"
+            "name": "Teaching career events"
           }
         ]
       },
@@ -647,7 +647,7 @@
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/choose-teaching-in-a-public-school",
-            "name": "Choose teaching in a\n public school"
+            "name": "Choose teaching in a public school"
           },
           {
             "url": "http://dev-www.education.internal:17380/school-teacher-roles",
@@ -659,18 +659,18 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/professional-experiences",
-            "name": "Pre-service development\n opportunities",
+            "name": "Pre-service development opportunities",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/country-practicum-program",
-                "name": "Regional professional\n experience program"
+                "name": "Regional professional experience program"
               },
               {
                 "url": "http://dev-www.education.internal:17380/stem-specialised-placements",
-                "name": "STEM professional\n opportunities"
+                "name": "STEM professional opportunities"
               },
               {
                 "url": "http://dev-www.education.internal:17380/horizons",
@@ -678,7 +678,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/pre-service-casual-teaching",
-                "name": "Teaching opportunities\n for pre-service teachers"
+                "name": "Teaching opportunities for pre-service teachers"
               }
             ]
           },
@@ -691,11 +691,11 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/aboriginal-teacher-scholarships",
-                "name": "Bob Hawke Aboriginal\n teacher scholarships"
+                "name": "Bob Hawke Aboriginal teacher scholarships"
               },
               {
                 "url": "http://dev-www.education.internal:17380/aboriginal-teaching-pathways",
-                "name": "Pathways into\n teaching"
+                "name": "Pathways into teaching"
               }
             ]
           },
@@ -708,7 +708,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/graduate-development-program",
-                "name": "Graduate Development\n Program"
+                "name": "Graduate Development Program"
               }
             ]
           },
@@ -722,11 +722,11 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/school-leadership-roles",
-            "name": "School leadership\n opportunities"
+            "name": "School leadership opportunities"
           },
           {
             "url": "http://dev-www.education.internal:17380/central-and-regional-office-roles",
-            "name": "Central and regional\n office roles"
+            "name": "Central and regional office roles"
           },
           {
             "url": "http://dev-www.education.internal:17380/agricultural-careers",
@@ -773,7 +773,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/screening-school-council-board-members",
-                "name": "School\n council and board members"
+                "name": "School council and board members"
               },
               {
                 "url": "http://dev-www.education.internal:17380/ncchc-identification",
@@ -791,7 +791,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/teacher-qualifications-and-registration",
-            "name": "Teacher\n qualifications and registration"
+            "name": "Teacher qualifications and registration"
           }
         ]
       }
@@ -824,55 +824,55 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/royal-commission-into-institutional-responses-to-child-sexual-abuse",
-            "name": "Royal\n Commission"
+            "name": "Royal Commission"
           },
           {
             "url": "http://dev-www.education.internal:17380/our-organisation/priorities-and-initiatives",
-            "name": "Priorities\n and initiatives",
+            "name": "Priorities and initiatives",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/attendance-every-day-matters",
-                "name": "Attendance: Every day\n matters"
+                "name": "Attendance: Every day matters"
               },
               {
                 "url": "http://dev-www.education.internal:17380/kimberley-schools-project",
-                "name": "Kimberley Schools\n Project"
+                "name": "Kimberley Schools Project"
               },
               {
                 "url": "http://dev-www.education.internal:17380/culturally-responsive-schools",
-                "name": "Culturally responsive\n schools"
+                "name": "Culturally responsive schools"
               },
               {
                 "url": "http://dev-www.education.internal:17380/our-organisation/school-chaplaincy-program",
-                "name": "School\n chaplaincy program"
+                "name": "School chaplaincy program"
               },
               {
                 "url": "http://dev-www.education.internal:17380/our-organisation/caring-for-country-together",
-                "name": "Caring\n for Country together"
+                "name": "Caring for Country together"
               },
               {
                 "url": "http://dev-www.education.internal:17380/our-organisation/schools-clean-energy-technology-fund",
-                "name": "Schools\n Clean Energy Technology Fund"
+                "name": "Schools Clean Energy Technology Fund"
               },
               {
                 "url": "http://dev-www.education.internal:17380/our-priorities-sharing-prosperity",
-                "name": "Sharing\n Prosperity"
+                "name": "Sharing Prosperity"
               }
             ]
           },
           {
             "url": "http://dev-www.education.internal:17380/school-data-and-performance",
-            "name": "School data and\n performance",
+            "name": "School data and performance",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/naplan-public-school-performance-reports",
-                "name": "NAPLAN\n public school performance reports"
+                "name": "NAPLAN public school performance reports"
               }
             ]
           },
@@ -885,7 +885,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/outcome-based-management-framework",
-                "name": "Outcome based\n management framework"
+                "name": "Outcome based management framework"
               }
             ]
           },
@@ -935,7 +935,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/high-priority-maintenance-and-minor-works",
-            "name": "High Priority\n Maintenance and Minor Works program"
+            "name": "High Priority Maintenance and Minor Works program"
           },
           {
             "url": "http://dev-www.education.internal:17380/bob-hawke-college",
@@ -943,7 +943,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/tuart-woodland",
-            "name": "Wellard Village Primary School (planning\n name) environmental information"
+            "name": "Wellard Village Primary School (planning name) environmental information"
           }
         ]
       },
@@ -957,30 +957,30 @@
       },
       {
         "url": "http://dev-www.education.internal:17380/principals-fellowship-program",
-        "name": "Principals' Fellowship\n Program"
+        "name": "Principals' Fellowship Program"
       },
       {
         "url": "http://dev-www.education.internal:17380/connecting-schools-and-communities",
-        "name": "Connecting schools and\n communities",
+        "name": "Connecting schools and communities",
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/community-use-of-school-facilities",
-            "name": "Community use of\n school facilities"
+            "name": "Community use of school facilities"
           },
           {
             "url": "http://dev-www.education.internal:17380/community-consultations-on-schooling",
-            "name": "Community\n consultations on schooling",
+            "name": "Community consultations on schooling",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/community-consultation-in-the-clarkson-kinross-and-mindarie-area",
-                "name": "Community\n consultation in the Clarkson, Kinross and Mindarie area"
+                "name": "Community consultation in the Clarkson, Kinross and Mindarie area"
               },
               {
                 "url": "http://dev-www.education.internal:17380/community-consultation-outcomes-for-the-cannington-and-maddington-area",
-                "name": "Community\n consultation outcomes for the Cannington and Maddington area"
+                "name": "Community consultation outcomes for the Cannington and Maddington area"
               }
             ]
           }
@@ -988,7 +988,7 @@
       },
       {
         "url": "http://dev-www.education.internal:17380/non-government-school-registration",
-        "name": "Non-government school\n registration",
+        "name": "Non-government school registration",
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/standards",
@@ -1000,11 +1000,11 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/renew-a-school-registration",
-            "name": "Renew a school\n registration"
+            "name": "Renew a school registration"
           },
           {
             "url": "http://dev-www.education.internal:17380/change-a-school-registration",
-            "name": "Change a school\n registration"
+            "name": "Change a school registration"
           },
           {
             "url": "http://dev-www.education.internal:17380/ongoing-obligations",
@@ -1012,37 +1012,37 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/non-government-school-registration-limitations",
-            "name": "Registration\n limitations"
+            "name": "Registration limitations"
           },
           {
             "url": "http://dev-www.education.internal:17380/review-of-non-government-school-registration-decisions",
-            "name": "Review\n of decisions"
+            "name": "Review of decisions"
           },
           {
             "url": "http://dev-www.education.internal:17380/registration-as-a-training-organisation",
-            "name": "Registration as\n a training organisation"
+            "name": "Registration as a training organisation"
           },
           {
             "url": "http://dev-www.education.internal:17380/non-government-school-concerns",
-            "name": "Concerns about\n non-government schools"
+            "name": "Concerns about non-government schools"
           },
           {
             "url": "http://dev-www.education.internal:17380/international-school-registration",
-            "name": "International school\n registration"
+            "name": "International school registration"
           },
           {
             "url": "http://dev-www.education.internal:17380/community-based-course-registration",
-            "name": "Community based\n course registration"
+            "name": "Community based course registration"
           }
         ]
       },
       {
         "url": "http://dev-www.education.internal:17380/non-government-school-funding",
-        "name": "Non-government school\n funding",
+        "name": "Non-government school funding",
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/non-government-student-census",
-            "name": "Non-government student\n census"
+            "name": "Non-government student census"
           },
           {
             "url": "http://dev-www.education.internal:17380/low-interest-loan-scheme",
@@ -1054,7 +1054,7 @@
           },
           {
             "url": "http://dev-www.education.internal:17380/special-education-per-capita-funding",
-            "name": "Special education\n funding"
+            "name": "Special education funding"
           }
         ]
       },
@@ -1075,7 +1075,7 @@
               },
               {
                 "url": "http://dev-www.education.internal:17380/understand-the-complaints-process",
-                "name": "Understand the\n complaints process"
+                "name": "Understand the complaints process"
               }
             ]
           }
@@ -1101,47 +1101,47 @@
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/learning-at-home/support-for-children-and-young-people",
-            "name": "Support\n for children and young people"
+            "name": "Support for children and young people"
           },
           {
             "url": "http://dev-www.education.internal:17380/learning-at-home/assistance-for-schools",
-            "name": "Assistance for\n schools",
+            "name": "Assistance for schools",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/supporting-students",
-                "name": "Supporting\n students"
+                "name": "Supporting students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/taking-care-of-yourself",
-                "name": "Taking care\n of yourself"
+                "name": "Taking care of yourself"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/other-support-services",
-                "name": "Other\n support services"
+                "name": "Other support services"
               }
             ]
           },
           {
             "url": "http://dev-www.education.internal:17380/learning-at-home/support-for-parents-and-carers",
-            "name": "Support\n for parents and carers",
+            "name": "Support for parents and carers",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/student-health-and-wellbeing",
-                "name": "Health\n and wellbeing"
+                "name": "Health and wellbeing"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/support-services-and-resources",
-                "name": "Support\n services and resources"
+                "name": "Support services and resources"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/learning-environment",
-                "name": "Set up a\n learning environment"
+                "name": "Set up a learning environment"
               },
               {
                 "url": "http://dev-www.education.internal:17380/parent-helpline",
@@ -1157,76 +1157,76 @@
         "children": [
           {
             "url": "http://dev-www.education.internal:17380/learning-at-home/learning-resources-from-across-the-nation",
-            "name": "Learning\n resources from across the nation"
+            "name": "Learning resources from across the nation"
           },
           {
             "url": "http://dev-www.education.internal:17380/learning-at-home/learning-resources-by-year-level",
-            "name": "Learning\n resources by year level",
+            "name": "Learning resources by year level",
             "children": [
               {
                 "name": ""
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/kindergarten",
-                "name": "Resources for\n Kindergarten students"
+                "name": "Resources for Kindergarten students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/pre-primary",
-                "name": "Resources for\n Pre-primary students"
+                "name": "Resources for Pre-primary students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-1",
-                "name": "Resources for Year 1\n students"
+                "name": "Resources for Year 1 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-2",
-                "name": "Resources for Year 2\n students"
+                "name": "Resources for Year 2 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-3",
-                "name": "Resources for Year 3\n students"
+                "name": "Resources for Year 3 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-4",
-                "name": "Resources for Year 4\n students"
+                "name": "Resources for Year 4 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-5",
-                "name": "Resources for Year 5\n students"
+                "name": "Resources for Year 5 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-6",
-                "name": "Resources for Year 6\n students"
+                "name": "Resources for Year 6 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-7",
-                "name": "Resources for Year 7\n students"
+                "name": "Resources for Year 7 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-8",
-                "name": "Resources for Year 8\n students"
+                "name": "Resources for Year 8 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-9",
-                "name": "Resources for Year 9\n students"
+                "name": "Resources for Year 9 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-10",
-                "name": "Resources for Year 10\n students"
+                "name": "Resources for Year 10 students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-11",
-                "name": "Resources for Year 11\n Students"
+                "name": "Resources for Year 11 Students"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/year-12",
-                "name": "Resources for Year 12\n students"
+                "name": "Resources for Year 12 students"
               }
             ]
           },
           {
             "url": "http://dev-www.education.internal:17380/covid-19/school-camps-covid-19-assistance-program",
-            "name": "School\n Camps COVID-19 Assistance Program"
+            "name": "School Camps COVID-19 Assistance Program"
           }
         ]
       }

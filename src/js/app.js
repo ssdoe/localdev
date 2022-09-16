@@ -152,60 +152,6 @@ $(function () {
 
 
 
-  // $(".eds-c-page-feedback-form__button--yes").on("click", function () {
-  //   current_step = $(this).parents("fieldset");
-  //   next_step = $(this).parents("fieldset").next();
-  //   next_step.fadeIn();
-  //   current_step.hide();
-  //   $yesFeedbackButton.prop("checked", true);
-
-  // });
-  // $(".eds-c-page-feedback-form__button--no").on("click", function () {
-  //   current_step = $(this).parents("fieldset");
-  //   next_step = $(this).parents("fieldset").next();
-  //   next_step.fadeIn();
-  //   current_step.hide();
-  //   $noFeedbackButton.prop("checked", true);
-  // });
-
-  // $(".eds-c-page-feedback-form__button--cancel").on("click", function () {
-  //   current_step = $(this).parents("fieldset");
-  //   next_step = $(this).parents("fieldset").prev();
-  //   next_step.fadeIn();
-  //   current_step.hide();
-  //   $noFeedbackButton.prop("checked", false);
-  //   $noFeedbackButton.prop("checked", false);
-  //   $('#eds-c-page-feedback-form__comments').val("");
-  // });
-
-  // $(".eds-c-page-feedback-form__button--submit").on("click", function (e) {
-  //   current_step = $(this).parents("fieldset");
-  //   next_step = $("#thanksStep");
-  //   next_step.fadeIn();
-  //   current_step.hide();
-  //   // e.preventDefault();
-  //   feedback.store(wasHelpful);
-  //   feedback.send();
-
-  // });
-
-  // $(".eds-c-page-feedback-form__button--return, .eds-c-page-feedback-form__button--go-back").on("click", function () {
-  //   current_step = $(this).parents("fieldset");
-  //   next_step = $("#firstStep");
-  //   next_step.fadeIn();
-  //   current_step.hide();
-  //   $('#eds-c-page-feedback-form__comments').val("");
-  // });
-
-
-  // $(".eds-c-page-feedback-form__button--contact").on("click", function () {
-  //   current_step = $(this).parents("fieldset");
-  //   next_step = $("#contactDetails");
-  //   next_step.fadeIn();
-  //   current_step.hide();
-  //   $('#contactDetails input').val("");
-  // });
-
   var menuID = '';
   $(".main-nav__list li").each(function () {
     $(this).prev("li").attr("id", "menu-" + menuID++);
@@ -215,19 +161,15 @@ $(function () {
   // Recursive Unordered List to JSON
   //------------------------------------------------------
   var out = [];
-
+  $(".addclasschildren ul li ul").addClass("children");
   function processOneLi(node) {
-
     // $("#doemenu ul li ul").addClass('childern')
-
     var aNode = node.children("a:first");
     var retVal = {
       "title": aNode.attr("title"),
       "url": aNode.attr("href"),
       "name": aNode.text()
     };
-
-
     node.find("> .children > li").each(function () {
       if (!retVal.hasOwnProperty("children")) {
         retVal.children = [];
@@ -241,15 +183,10 @@ $(function () {
   $("#doemenu").children("li").each(function () {
     out.push(processOneLi($(this)));
   });
-
-
   console.log("got the following JSON from your HTML:", JSON.stringify(out));
-  $("#result").html(JSON.stringify(out));
-
-
-
-
+  $("#result").html(JSON.stringify(out, undefined, 2));
 });
+
 
 
 (function () {

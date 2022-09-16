@@ -6,6 +6,7 @@ eleventyNavigation:
   order: 1
 ---
 
+<div class="addclasschildren">
 
 * [Education in WA](http://dev-www.education.internal:17380/education-in-wa)
   * [Before school](http://dev-www.education.internal:17380/before-school)
@@ -294,3 +295,4 @@ eleventyNavigation:
       * [Resources for Year 12 students](http://dev-www.education.internal:17380/learning-at-home/year-12)
     * [School Camps COVID-19 Assistance Program](http://dev-www.education.internal:17380/covid-19/school-camps-covid-19-assistance-program)
 
+</div>
