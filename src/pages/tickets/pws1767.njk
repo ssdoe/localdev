@@ -1,0 +1,74 @@
+---
+layout: base
+title: PWS-1767
+eleventyNavigation:
+  key: PWS-1767
+  parent: Tickets
+  order: 1
+---
+
+<table id="table-accordian" class="accordian table table-striped">
+  <thead class="">
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="accordian-item" id="event-row-one">
+      <td scope="row">Some Event</td>
+      <td>28 August 2022</td>
+      <td class="w-25">
+        <button class="accordion-button d-flex flex-row px-0 align-items-center justify-content-between"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#row-one"
+                    aria-expanded="true"
+                    aria-controls="row-one">
+          <span>Expand Detail</span>
+          <span class="ms-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="orange"
+                                  class="bi bi-x-circle ms-auto" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path
+                                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="orange"
+                                  class="bi bi-dash-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+            </svg>
+          </span>
+        </button>
+      </td>
+    </tr>
+    <tr id="row-one" class="accordian-collapse collapse show" aria-labelledby="event-row-one" data-bs-parent="#table-accordian">
+      <td class="accordion-body bg-light" colspan="3">
+        <h4>Event Detail Here</h4>
+        <p>Ut ut nisi esse amet ipsum culpa et. Aute aute eu enim cillum eu do culpa tempor proident duis irure nostrud. Duis duis ex fugiat tempor do incididunt officia incididunt. Ea deserunt cillum occaecat ullamco dolore. Voluptate anim non dolore laboris duis in adipisicing eu ea laboris labore anim nisi.</p>
+        <p>Ut ut nisi esse amet ipsum culpa et. Aute aute eu enim cillum eu do culpa tempor proident duis irure nostrud. Duis duis ex fugiat tempor do incididunt officia incididunt. Ea deserunt cillum occaecat ullamco dolore. Voluptate anim non dolore laboris duis in adipisicing eu ea laboris labore anim nisi.</p>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  .bi-dash-circle {
+    display: none;
+  }
+  .bi-x-circle {
+    display: block;
+  }
+  .collapsed .bi-x-circle {
+    display: none;
+  }
+  .collapsed .bi-dash-circle {
+    display: block;
+  }
+  .eds btn:focus,
+  button:focus {
+    outline: 0px!important;
+    outline-offset: 0px!important;
+  }
+</style>

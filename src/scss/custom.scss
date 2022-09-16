@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #474747;
+    line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    align-items: center;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    place-content: center;
+}
+
+.inner-wrapper {
+    border: 1px solid #A40A66;
+    margin: 20px;
+    max-width: 770px;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.content {
+    padding: 20px;
+    padding-top: 15px;
+}
+
+h2,
+h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #A40A66;
+
+    &:hover {
+        color: #474747;
+    }
+}
+
+footer {
+    min-height: 30px;
+    background-image: url("data:image/svg+xml, %3Csvg width='335' height='30' viewBox='0 0 335 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='335' height='30' fill='%23FDC432'/%3E%3Cpath d='M0 0H217.415L227.465 30H0V0Z' fill='%23E94F36'/%3E%3Cpath d='M0 0H178.89L173.53 30H0V0Z' fill='%233F2B56'/%3E%3Cpath d='M0 0H118.255L121.27 30H0V0Z' fill='%23A40A66'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 27px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .shaping {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (min-width: 978px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 34px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+}

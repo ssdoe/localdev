@@ -1,0 +1,174 @@
+---
+layout: base
+title: PWS-2064
+eleventyNavigation:
+  key: PWS-2064
+  parent: Tickets
+  order: 3
+---
+<div class="row">
+
+  <div class="col-md-4 col-lg-4 offset-lg-1">
+    <div class="eds-c-page-feedback-panel">
+      <div class="eds-c-page-feedback-form eds-u-clearfix">
+
+        <fieldset id="firstStep">
+          <legend class="eds-c-page-feedback-form__title">Provide your feedback</legend>
+          <!--  Slide 0 - Provide feedback -->
+          <div class="eds-c-page-feedback-form__slide eds-c-page-feedback-form__slide--helpful eds-u-clearfix">
+            <div class="centre-container eds-u-clearfix">
+              <div class="inner-wrapper@xs-max">
+                <label for="eds-c-page-feedback-form__checkbox--helpful" hidden="true">
+                  <input class="eds-u-hidden" id="eds-c-page-feedback-form__checkbox--helpful"
+                    name="eds-c-page-feedback-form__checkbox--helpful" type="checkbox" tabindex="-1" aria-hidden="true"
+                    aria-label="" />
+                </label>
+                <label for="honeypot" hidden="true">
+                  <input class="eds-u-hidden" id="honeypot" name="honeypot" maxlength="100" type="text" tabindex="-1"
+                    aria-label="" />
+                </label>
+                <div class="eds-u-clearfix">
+                  <p id="eds-c-page-feedback-form__comments-label">Was this page helpful?</p>
+                </div>
+                <!--  Buttons  -->
+                <div class="eds-u-clearfix">
+                  <button id="eds-c-page-feedback-form__button--yes"
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--yes">Yes</button>
+                  <button id="eds-c-page-feedback-form__button--no"
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--no">No</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="secondStep">
+          <legend class="eds-c-page-feedback-form__title">Was this page helpful?</legend>
+
+          <!--   1 - Was this page helpful? -->
+          <div class="eds-c-page-feedback-form__slide eds-c-page-feedback-form__slide--feedback-form">
+            <div class="centre-container eds-u-clearfix">
+              <div class="inner-wrapper@xs-max">
+                <!--  Yes  -->
+                <label class="eds-c-radio-btn">
+                  <input id="eds-c-page-feedback-form__was-this-page-helpful--yes" type="radio"
+                    name="eds-c-page-feedback-form__was-this-page-helpful-radios" />
+                  <span class="eds-c-radio-btn__checkmark"></span>Yes
+                </label>
+                <!--  No  -->
+                <label class="eds-c-radio-btn">
+                  <input id="eds-c-page-feedback-form__was-this-page-helpful--no" type="radio"
+                    name="eds-c-page-feedback-form__was-this-page-helpful-radios" />
+                  <span class="eds-c-radio-btn__checkmark"></span>No
+                </label>
+                <br>
+                <!--  Feedback  -->
+                <textarea class="eds-c-page-feedback-form__comments" id="eds-c-page-feedback-form__comments"
+                  placeholder="Please tell us why (optional)" maxlength="1000" name="eds-c-page-feedback-form__comments"
+                  rows="6" aria-labelledby="eds-c-page-feedback-form__comments-label" tabindex="-1"
+                  data-gramm_editor="false" data-gramm="false"></textarea>
+                <!--  Contact  -->
+                <!--  <input class="eds-c-page-feedback-form__contact-me custom-checkbox" id="eds-c-page-feedback-form__contact-me" name="eds-c-page-feedback-form__contact-me" type="checkbox" tabindex="-1" aria-labelledby="eds-c-page-feedback-form__contact-me-label" />
+            <label for="eds-c-page-feedback-form__contact-me" id="eds-c-page-feedback-form__contact-me-label">I would like someone to contact me regarding my feedback.</label>  -->
+                <!--  Buttons  -->
+                <div class="eds-u-float-right@sm-max eds-u-clearfix button-container">
+                  <button
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--submit">Submit
+                    feedback</button>
+                  <button
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--contact">Enter
+                    contact details</button>
+                  <button
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--cancel">Cancel</button>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Contact Details -->
+
+        <fieldset id="contactDetails">
+          <legend class="eds-c-page-feedback-form__title">Please enter your contact details</legend>
+          <div class="eds-c-page-feedback-form__slide eds-c-page-feedback-form__slide--contact-details">
+            <div class="centre-container eds-u-clearfix">
+              <div class="inner-wrapper@xs-max">
+                <div class="eds-c-page-feedback-form__wrapper">
+                  <p class="input-heading">Preferred contact method</p>
+                  <!--  Email  -->
+                  <label class="eds-c-radio-btn">
+                    <input id="eds-c-page-feedback-form__contact-method-radios--email" type="radio"
+                      name="eds-c-page-feedback-form__contact-method-radios" checked />
+                    <span class="eds-c-radio-btn__checkmark eds-c-radio-btn__checkmark--email"></span>Email
+                  </label>
+                  <!--  Phone  -->
+                  <label class="eds-c-radio-btn">
+                    <input id="eds-c-page-feedback-form__contact-method-radios--phone" type="radio"
+                      name="eds-c-page-feedback-form__contact-method-radios" />
+                    <span class="eds-c-radio-btn__checkmark"></span>Phone
+                  </label>
+                  <div class="eds-u-clearfix"></div>
+                  <!--  Contact detail fields  -->
+                  <label class="input-heading" id="eds-c-page-feedback-form__name-label"
+                    for="eds-c-page-feedback-form__name">Name</label>
+                  <input type="text" id="eds-c-page-feedback-form__name" name="name" required
+                    aria-labelledby="eds-c-page-feedback-form__name-label" />
+                  <label class="input-heading eds-c-page-feedback-form__contact-method--email"
+                    id="eds-c-page-feedback-form__email-label" for="eds-c-page-feedback-form__email">Email</label>
+                  <input class="eds-c-page-feedback-form__contact-method--email" type="email"
+                    id="eds-c-page-feedback-form__email" name="email"
+                    aria-labelledby="eds-c-page-feedback-form__email-label" />
+                  <small class="eds-c-page-feedback-form__invalid-email d-none">Please enter a valid email
+                    address.</small>
+                  <label class="input-heading eds-c-page-feedback-form__contact-method--phone d-none"
+                    id="eds-c-page-feedback-form__phone-label" for="eds-c-page-feedback-form__phone">Contact
+                    number</label>
+                  <input class="eds-c-page-feedback-form__contact-method--phone d-none" type="tel"
+                    id="eds-c-page-feedback-form__phone" name="phone"
+                    aria-labelledby="eds-c-page-feedback-form__phone-label" />
+                  <small class="eds-c-page-feedback-form__invalid-phone d-none">Please enter a valid phone
+                    number.</small>
+                  <!--  Buttons  -->
+                  <button
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--submit">Submit
+                    feedback</button>
+                  <button
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--go-back">Go
+                    back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="thanksStep">
+          <legend class="eds-c-page-feedback-form__title">Thanks for the feedback</legend>
+          <div class="eds-c-page-feedback-form__slide eds-c-page-feedback-form__slide--thanks">
+            <div class="centre-container eds-u-clearfix">
+              <div class="inner-wrapper@xs-max">
+                <div class="eds-c-page-feedback-form__wrapper">
+                  <p>Thank you for taking the time to provide feedback, we will review and respond as required.</p>
+                  <button
+                    class="eds-c-button eds-c-page-feedback-form__button eds-c-page-feedback-form__button--return">Return</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </fieldset>
+  </div>
+
+
+
+
+</div>
+
+<style>
+  .eds-c-page-feedback-panel fieldset:not(:first-of-type) {
+    display: none;
+  }
+</style>

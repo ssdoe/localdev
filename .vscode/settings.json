@@ -1,0 +1,18 @@
+{
+    "editor.formatOnSave": true,
+    "html.suggest.html5": true,
+    "emmet.includeLanguages": {
+        "njk": "html"
+    },
+    "files.associations": {
+        "*.njk": "nunjucks"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#ff9900",
+        "titleBar.activeBackground": "#f90",
+        "titleBar.activeForeground": "#fff"
+    },
+    "[nunjucks]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
+    }
+}

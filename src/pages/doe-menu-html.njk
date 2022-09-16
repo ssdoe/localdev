@@ -1,0 +1,109 @@
+---
+layout: base
+title: Doe Menu HTML
+eleventyNavigation:
+key: doemenuhtml
+order: 1
+---
+
+<h2>Menu</h2>
+
+<style>
+  #mainnav {
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #mainnav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: auto;
+  }
+
+  #mainnav li {
+    position: relative;
+    width: 100%;
+  }
+
+  #mainnav a,
+  #mainnav a:visited {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid orange;
+    background-color: white;
+    padding: 10px;
+  }
+
+  #mainnav li:hover>a {
+    background: #dfd7ca;
+    color: #c00;
+  }
+
+  #mainnav li ul {
+    display: none;
+  }
+
+  #mainnav li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+</style>
+
+
+
+{# {% macro menuItem(item) %}
+<li class="nav-item position-relative">
+  {% if item.url %}
+  <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+  {% else %}
+  {{ item.name }}
+  {% endif %}
+  {% if item.children %}
+  <ul class="col-12 bg-info bg-opacity-10 list-unstyled">
+    {% for item in item.children %}
+    {{ menuItem(item) }}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
+{% endmacro %}
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <ul class="navbar-nav d-flex flex-row justify-content-between border w-100">
+    {% for item in menu %}
+    {{ menuItem(item) }}
+    {% endfor %}
+  </ul>
+</nav> #}
+
+{% macro menuItem(item) %}
+<li>
+  {% if item.url %}
+  <a href="{{ item.url }}">{{ item.name }}</a>
+  {% else %}
+  {{ item.name }}
+  {% endif %}
+  {% if item.children %}
+  <ul>
+    {% for item in item.children %}
+    {{ menuItem(item) }}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
+{% endmacro %}
+
+<nav>
+  <ul id="mainnav">
+    {% for item in menu %}
+    {{ menuItem(item) }}
+    {% endfor %}
+  </ul>
+</nav>

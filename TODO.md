@@ -1,0 +1,12 @@
+PWS-2025 SiteImprove:
+☐ Add language spell checker in Site Improve Spellcheck Pref
+☐ Implement new language selector with language ID.
+https://codyhouse.co/blog/post/accessible-language-picker
+
+PWS-2011 Accessibility review:
+☐ Review a11ty in Siteimprove
+☐ Review in WAVE
+☐ Compare between the two
+☐ Recommendations Report
+
+PWS-1926 New Future Site:
