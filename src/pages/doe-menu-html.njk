@@ -1,50 +1,22 @@
 ---
-layout: base
+layout: blank
 title: Doe Menu HTML
 eleventyNavigation:
   key: doemenuhtml
   order: 1
 ---
 
-<h2>Menu</h2>
-
-{# {% macro menuItem(item) %}
-<li class="nav-item position-relative">
-  {% if item.url %}
-  <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
-  {% else %}
-  {{ item.name }}
-  {% endif %}
-  {% if item.children %}
-  <ul class="col-12 bg-info bg-opacity-10 list-unstyled">
-    {% for item in item.children %}
-    {{ menuItem(item) }}
-    {% endfor %}
-  </ul>
-  {% endif %}
-</li>
-{% endmacro %}
-
-<nav class="navbar navbar-expand-lg bg-light">
-  <ul class="navbar-nav d-flex flex-row justify-content-between border w-100">
-    {% for item in menu %}
-    {{ menuItem(item) }}
-    {% endfor %}
-  </ul>
-</nav> #}
+<h1>Menu</h1>
 
 {% macro menuItem(item) %}
-  <li>
-    {% if item.url %}
-      <a href="{{ item.url }}" 
-  {% if item.children %} aria-haspopup="true" {% endif %}
-  class="{% if item.children %} menu-link {% else %} menu-link menu-list-link {% endif %}"
-  >{{ item.name }}</a>
+  <li role="menuitem">
+    {% if item.url and item.children %}
+      <a class="menu-link mega-menu-link" aria-haspopup="true" href="#">{{ item.name }}</a>
     {% else %}
-      {{ item.name }}
+      <a class="menu-link menu-list-link" href="#">{{ item.name }}</a>
     {% endif %}
     {% if item.children %}
-      <ul class="menu menu-list">
+      <ul class="menu menu-list" aria-hidden="false" role="menubar">
         {% for item in item.children %}
           {{ menuItem(item) }}
         {% endfor %}
@@ -53,40 +25,20 @@ eleventyNavigation:
 </li>
 {% endmacro %}
 
-{% set hasPopUp %}
-{% if ltwo.children %}
-menu-link mega-menu-link
-{% else %}
-"menu-link mega-menu-link"
-{% endif %}
-{% endset %}
-
-<div class="nav">
 <nav>
-  <ul class="menu menu-bar">
-    {% for lone in menu %}
-      <li>
-        <a class="menu-link mega-menu-link" href="javascript:void(0);" aria-haspopup="true">{{lone.name }}</a>
-        <ul class="mega-menu">
-          {% for ltwo in lone.children %}
-            <li>
-              <a class="menu-link mega-menu-link" href="javascript:void(0);" >{{ltwo.name}}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
-</div>
-
-{# <div class="nav">
-    <nav>
-      <a href="#" class="mobile-menu-trigger">Open mobile menu</a>
-      <ul id="menu menu-bar mega-menu-link">
-        {% for item in menu %}
-        {{ menuItem(item) }}
+<a href="javascript:void(0);" class="mobile-menu-trigger">Open mobile menu</a>
+<ul class="menu menu-bar">
+  {% for lone in menu %}
+    <li>
+      <a class="menu-link menu-bar-link" href="javascript:void(0);" aria-haspopup="true" tabindex="0">{{lone.name }}</a>
+      <ul class="mega-menu mega-menu--multiLevel">
+        {% for item in lone.children %}
+          {{ menuItem(item) }}
         {% endfor %}
       </ul>
-  </nav>
-</div> #}
+    </li>
+  {% endfor %}
+</ul>
+</nav>
+
+{# <svg stroke="orange" xmlns="http://www.w3.org/2000/svg" width="7.32" height="11.91" viewBox="0 0 7.32 11.91" aria-hidden="true"> <polyline fill="none" stroke-width="2px" points="0.71 11.21 5.91 5.91 0.71 0.71" class=""></polyline> </svg> #}

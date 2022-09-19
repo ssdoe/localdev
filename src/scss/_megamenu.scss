@@ -1,7 +1,7 @@
-$color-accent:                      #177E89;
-$color-light:                       #ffffff;
+$color-accent:                      #000;
+$color-light:                       #fafafa;
 $color-dark:                        #2a2a2a;
-$menu-link-padding:                 20px 25px;
+$menu-link-padding:                 10px 15px;
 $breakpoint:                        950px;
 $mega-menu-multiLevel-colWidth:     100/3 + 0%;
 $mobile-menu-back-height:           calc(1.4em + 40px);
@@ -106,7 +106,7 @@ nav {
         }
         
         // FUNCTIONALITY: Open mega menu
-        &:focus {
+        &:focus,&:hover {
           ~ ul {
             display: flex;
             transform-origin: top;

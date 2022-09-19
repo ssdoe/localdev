@@ -1,0 +1,128 @@
+$color-light: #e3d7c5;
+$color-dark: #2a2a2a;
+$color-accent: #000;
+$menu-link-padding: 5px 5px;
+
+nav {
+  margin: 50px;
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    &:hover,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
+
+.menu-bar-link {
+  padding: $menu-link-padding;
+  // background: $color-light;
+  color: $color-accent;
+  position: relative;
+  z-index: 1;
+  &[aria-haspopup="true"] {
+    padding-right: 40px;
+    &:after {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg stroke='black' xmlns='http://www.w3.org/2000/svg' width='7.32' height='11.91' viewBox='0 0 7.32 11.91' aria-hidden='true'%3E%3Cpolyline fill='none' stroke-width='2px' points='0.71 11.21 5.91 5.91 0.71 0.71' class=''%3E%3C/polyline%3E%3C/svg%3E");
+      width: 14px;
+      height: 14px;
+      font-size: 8px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.menu-link {
+  padding: $menu-link-padding;
+  &:hover {
+    background: #fff;
+  }
+}
+
+.menu-bar {
+  background-color: $color-light;
+  display: flex;
+}
+
+.menu {
+  [aria-haspopup="true"] {
+    ~ ul {
+      display: none;
+    }
+  }
+}
+
+.menu-bar {
+  position: relative;
+  > li {
+    > [aria-haspopup="true"] {
+      &:focus,
+      &:hover {
+        ~ ul {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          background-color: $color-light;
+          // min-width: 800px;
+          height: 600px;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    // FUNCTIONALITY: Keep mega menu open
+    // Hover is added for safari
+    &:focus-within,
+    &:hover {
+      > [aria-haspopup="true"] {
+        ~ ul {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          background-color: $color-light;
+          // min-width: 100%;
+          height: 600px;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.menu-bar > li > ul > li > [aria-haspopup="true"] ~ ul {
+  display: block;
+}
+
+.mega-menu--multiLevel a {
+  color: orange;
+}
+.mega-menu--multiLevel li ul a:not(:has(+ ul)) {
+  color: blue;
+}
+
+// .mega-menu--multiLevel a:has(+ul) {
+//     font-weight: bold;
+//     color: #f90;
+//   }
+
+//   .mega-menu--multiLevel ~ li > a {
+//     font-weight: bold;
+//     color: #f90;
+//   }
+
+.menu-bar > li > ul > li > [aria-haspopup="true"]:hover ~ ul {
+  display: block;
+}
