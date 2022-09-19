@@ -183,7 +183,7 @@ $(function () {
   $("#doemenu").children("li").each(function () {
     out.push(processOneLi($(this)));
   });
-  console.log("got the following JSON from your HTML:", JSON.stringify(out));
+  // console.log("got the following JSON from your HTML:", JSON.stringify(out));
   $("#result").html(JSON.stringify(out, undefined, 2));
 });
 
