@@ -16,10 +16,8 @@ $enable-negative-margins: true;
 // Optional Bootstrap components here
 // etc
 
-
-
 @import "fonts";
-
+@import "variables";
 @import "~bootstrap/scss/bootstrap";
 
 @import "megamenu";
