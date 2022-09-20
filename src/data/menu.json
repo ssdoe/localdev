@@ -120,7 +120,7 @@
             "name": "Premier's Anzac Student Tour",
             "children": [
               {
-                "name": ""
+                "name": "Premier's Anzac Student Tour"
               },
               {
                 "url": "http://dev-www.education.internal:17380/2022-anzac-tour",
@@ -145,7 +145,7 @@
             "name": "WA Education Awards",
             "children": [
               {
-                "name": ""
+                "name": "WA Education Awards"
               },
               {
                 "url": "http://dev-www.education.internal:17380/awards-how-to-nominate",
@@ -202,7 +202,7 @@
             "name": "Term dates",
             "children": [
               {
-                "name": ""
+                "name": "Term dates"
               },
               {
                 "url": "http://dev-www.education.internal:17380/past-term-dates",
@@ -215,7 +215,7 @@
             "name": "Attendance",
             "children": [
               {
-                "name": ""
+                "name": "Attendance"
               },
               {
                 "url": "http://dev-www.education.internal:17380/absent-from-school",
@@ -262,7 +262,7 @@
             "name": "Languages",
             "children": [
               {
-                "name": ""
+                "name": "Languages"
               },
               {
                 "url": "http://dev-www.education.internal:17380/aboriginal-languages",
@@ -275,7 +275,7 @@
             "name": "STEM",
             "children": [
               {
-                "name": ""
+                "name": "STEM"
               },
               {
                 "url": "http://dev-www.education.internal:17380/what-is-stem",
@@ -304,7 +304,7 @@
             "name": "Gifted and Talented",
             "children": [
               {
-                "name": ""
+                "name": "Gifted and Talented"
               },
               {
                 "url": "http://dev-www.education.internal:17380/gifted-and-talented/programs-and-opportunities",
@@ -329,7 +329,7 @@
             "name": "Instrumental music",
             "children": [
               {
-                "name": ""
+                "name": "Instrumental music"
               },
               {
                 "url": "http://dev-www.education.internal:17380/instrumental-music/student-selection-and-commitment",
@@ -360,7 +360,7 @@
             "name": "Career development",
             "children": [
               {
-                "name": ""
+                "name": "Career development"
               },
               {
                 "url": "http://dev-www.education.internal:17380/career-conversations",
@@ -431,7 +431,7 @@
             "name": "Violence",
             "children": [
               {
-                "name": ""
+                "name": "Violence"
               },
               {
                 "url": "http://dev-www.education.internal:17380/violence/community",
@@ -478,7 +478,7 @@
             "name": "Australian Early Development Census (AEDC)",
             "children": [
               {
-                "name": ""
+                "name": "Australian Early Development Census (AEDC)"
               },
               {
                 "url": "http://dev-www.education.internal:17380/aedc-resources-for-families",
@@ -523,7 +523,7 @@
             "name": "VacSwim",
             "children": [
               {
-                "name": ""
+                "name": "VacSwim"
               },
               {
                 "url": "http://dev-www.education.internal:17380/programs-and-locations",
@@ -552,7 +552,7 @@
             "name": "Swimming careers",
             "children": [
               {
-                "name": ""
+                "name": "Swimming careers"
               },
               {
                 "url": "http://dev-www.education.internal:17380/swimming-instructor-resources",
@@ -601,7 +601,7 @@
             "name": "Teach in rural, regional and remote WA",
             "children": [
               {
-                "name": ""
+                "name": "Teach in rural, regional and remote WA"
               },
               {
                 "url": "http://dev-www.education.internal:17380/remote-teaching-service",
@@ -662,7 +662,7 @@
             "name": "Pre-service development opportunities",
             "children": [
               {
-                "name": ""
+                "name": "Pre-service development opportunities"
               },
               {
                 "url": "http://dev-www.education.internal:17380/country-practicum-program",
@@ -687,7 +687,7 @@
             "name": "Aboriginal pathways",
             "children": [
               {
-                "name": ""
+                "name": "Aboriginal pathways"
               },
               {
                 "url": "http://dev-www.education.internal:17380/aboriginal-teacher-scholarships",
@@ -704,7 +704,7 @@
             "name": "Graduate careers",
             "children": [
               {
-                "name": ""
+                "name": "Graduate careers"
               },
               {
                 "url": "http://dev-www.education.internal:17380/graduate-development-program",
@@ -769,7 +769,7 @@
             "name": "Nationally Coordinated Criminal History Check",
             "children": [
               {
-                "name": ""
+                "name": "Nationally Coordinated Criminal History Check"
               },
               {
                 "url": "http://dev-www.education.internal:17380/screening-school-council-board-members",
@@ -810,7 +810,7 @@
             "name": "Our people",
             "children": [
               {
-                "name": ""
+                "name": "Our people"
               },
               {
                 "url": "http://dev-www.education.internal:17380/our-values",
@@ -831,7 +831,7 @@
             "name": "Priorities and initiatives",
             "children": [
               {
-                "name": ""
+                "name": "Priorities and initiatives"
               },
               {
                 "url": "http://dev-www.education.internal:17380/attendance-every-day-matters",
@@ -868,7 +868,7 @@
             "name": "School data and performance",
             "children": [
               {
-                "name": ""
+                "name": "School data and performance"
               },
               {
                 "url": "http://dev-www.education.internal:17380/naplan-public-school-performance-reports",
@@ -881,7 +881,7 @@
             "name": "Annual reports",
             "children": [
               {
-                "name": ""
+                "name": "Annual reports"
               },
               {
                 "url": "http://dev-www.education.internal:17380/outcome-based-management-framework",
@@ -912,7 +912,7 @@
             "name": "Strategic directions",
             "children": [
               {
-                "name": ""
+                "name": "Strategic directions"
               },
               {
                 "url": "http://dev-www.education.internal:17380/artwork",
@@ -931,7 +931,7 @@
         "name": "Building our schools",
         "children": [
           {
-            "name": ""
+            "name": "Building our schools"
           },
           {
             "url": "http://dev-www.education.internal:17380/high-priority-maintenance-and-minor-works",
@@ -972,7 +972,7 @@
             "name": "Community consultations on schooling",
             "children": [
               {
-                "name": ""
+                "name": "Community consultations on schooling"
               },
               {
                 "url": "http://dev-www.education.internal:17380/community-consultation-in-the-clarkson-kinross-and-mindarie-area",
@@ -1071,7 +1071,7 @@
             "name": "Complaints",
             "children": [
               {
-                "name": ""
+                "name": "Complaints"
               },
               {
                 "url": "http://dev-www.education.internal:17380/understand-the-complaints-process",
@@ -1108,7 +1108,7 @@
             "name": "Assistance for schools",
             "children": [
               {
-                "name": ""
+                "name": "Assistance for schools"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/supporting-students",
@@ -1164,7 +1164,7 @@
             "name": "Learning resources by year level",
             "children": [
               {
-                "name": ""
+                "name": "Learning resources by year level"
               },
               {
                 "url": "http://dev-www.education.internal:17380/learning-at-home/kindergarten",

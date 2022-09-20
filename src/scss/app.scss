@@ -20,9 +20,6 @@ $enable-negative-margins: true;
 
 @import "fonts";
 
-
 @import "~bootstrap/scss/bootstrap";
 
-// @import "megamenu";
-
-// Then add additional custom code here
+@import "megamenu";

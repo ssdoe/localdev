@@ -1,0 +1,81 @@
+---
+layout: base
+title: Megamenu Bootstrap
+eleventyNavigation:
+  key: Megamenu Bootstrap
+  order: 1
+---
+
+<h1>{{ title }}</h1>
+
+{# {% macro menuItem(item) %}
+  <li class="nav-item">
+    {% if item.url and item.children %}
+      <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+    {% else %}
+      <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+    {% endif %}
+    {% if item.children %}
+      <ul class="list-unstyled border border-danger">
+        {% for item in item.children %}
+          {{ menuItem(item) }}
+        {% endfor %}
+    </ul>
+  {% endif %}
+</li>
+{% endmacro %} #}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+      <ul class="navbar-nav">
+        {% for lone in menu %}
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link dropdown-toggle" href="{{ lone.url }}" data-bs-toggle="dropdown" data-bs-auto-close="outside">{{lone.name }}</a>
+            <div class="dropdown-menu megamenu rounded-0" role="menu">
+              <div class="">
+                <ul class="list-unstyled d-flex flex-column flex-wrap" style="height:650px">
+                  {% for ltwo in lone.children %}
+                    <li class="nav-item col-3">
+                      <a class="nav-link fw-bold" href="{{ ltwo.url }}">{{ ltwo.name }}</a>
+                      {% if ltwo.children or ltwo.url%}
+                        <ul class="list-unstyled">
+                          {% for lthree in ltwo.children %}
+                            <li class="nav-item col-12 {% if lthree.children %}dropend{% endif %}">
+                              <a class="nav-link dropdown-item {% if lthree.children %}dropdown-toggle{% endif %}" {% if lthree.children %}
+                            data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside"
+                            aria-expanded="false"{% endif %} href="{{ lthree.url }}">{{ lthree.name }}</a>
+                              {% if lthree.children %}
+                                <ul class="dropdown-menu bg-warning">
+                                  {% for lfour in lthree.children %}
+                                    {% if lfour.url %}
+                                      <li>
+                                        <a class="dropdown-item" href="{{ lfour.url }}">{{ lfour.name }}</a>
+                                      </li>
+                                    {% else %}
+                                      <li class="nav-item fw-bold px-3">{{ lfour.name }}</li>
+                                    {% endif %}
+                                  {% endfor %}
+                                </ul>
+                              {% else %}
+                              {% endif %}
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% else %}
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
