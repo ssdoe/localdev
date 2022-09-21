@@ -14,6 +14,12 @@ $(function () {
   //   e.stopPropagation();
   // });
 
+  $('#main_nav ul.nav li.dropdown').on("hover", function () {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  }, function () {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+  });
+
   var feedback = {}
 
   // Model: Default data settings
@@ -163,6 +169,7 @@ $(function () {
 
 
   // Recursive Unordered List to JSON
+  // https://bountify.co/un-ordered-list-to-json-and-vice-versa
   //------------------------------------------------------
   var out = [];
   $(".addclasschildren ul li ul").addClass("children");
@@ -212,35 +219,49 @@ $(function () {
     });
   }, false);
 
+})();
 
+/// https://github.com/dallaslu/bootstrap-5-multi-level-dropdown (Hover)
+(function ($bs) {
+  const CLASS_NAME = 'has-child-dropdown-show';
+  $bs.Dropdown.prototype.toggle = function (_orginal) {
+    return function () {
+      document.querySelectorAll('.' + CLASS_NAME).forEach(function (e) {
+        e.classList.remove(CLASS_NAME);
+      });
+      let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+      for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+        dd.classList.add(CLASS_NAME);
+      }
+      return _orginal.call(this);
+    }
+  }($bs.Dropdown.prototype.toggle);
 
-  var initialize = function () {
-
-    var dropdownSubmenuList = [].slice.call(document.querySelectorAll('.dropdown-submenu-toggle'));
-
-    // Open submenu
-    dropdownSubmenuList.map(function (e) {
-      e.onclick = function (e) {
-        e.target.parentNode.querySelector('ul').classList.toggle('show');
-        e.stopPropagation();
+  document.querySelectorAll('.dropdown').forEach(function (dd) {
+    dd.addEventListener('hide.bs.dropdown', function (e) {
+      if (this.classList.contains(CLASS_NAME)) {
+        this.classList.remove(CLASS_NAME);
         e.preventDefault();
       }
+      e.stopPropagation(); // do not need pop in multi level mode
     });
+  });
 
-    document.addEventListener('click', function (e) {
-
-      // Close all submenus when clicking outside
-      dropdownSubmenuList.map(function (e) {
-        e.parentNode.querySelector('ul').classList.remove('show');
-      });
-
+  // for hover
+  document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function (dd) {
+    dd.addEventListener('mouseenter', function (e) {
+      let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+      if (!toggle.classList.contains('show')) {
+        $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+        dd.classList.add(CLASS_NAME);
+        // $bs.Dropdown.clearMenus();
+      }
     });
-  }
-
-  // in case the document is already rendered
-  if (document.readyState != 'loading') initialize();
-  // modern browsers
-  else if (document.addEventListener) document.addEventListener('DOMContentLoaded', initialize);
-
-
-})();
+    dd.addEventListener('mouseleave', function (e) {
+      let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+      if (toggle.classList.contains('show')) {
+        $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+      }
+    });
+  });
+})(bootstrap);

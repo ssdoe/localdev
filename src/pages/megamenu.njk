@@ -25,54 +25,50 @@ eleventyNavigation:
 </li>
 {% endmacro %} #}
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light dropdown-hover-all">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="main_nav">
-      <ul class="navbar-nav">
+      <ul class="nav navbar-nav">
         {% for lone in menu %}
           <li class="nav-item dropdown has-megamenu">
             <a class="nav-link dropdown-toggle" href="{{ lone.url }}" data-bs-toggle="dropdown" data-bs-auto-close="outside">{{lone.name }}</a>
             <div class="dropdown-menu megamenu rounded-0 bg-light border-0" role="menu">
-              <div class="">
-                <ul class="list-unstyled d-flex flex-column align-content-start flex-sm-wrap flex-nowrap" style="max-height:650px;">
-                  {% for ltwo in lone.children %}
-                    <li class="nav-item col-12 col-md-4">
-                      <a class="nav-link fw-bold" href="{{ ltwo.url }}">{{ ltwo.name }}</a>
-                      {% if ltwo.children or ltwo.url%}
-                        <ul class="list-unstyled">
-                          {% for lthree in ltwo.children %}
-                            <li class="nav-item {% if lthree.children %}dropend{% endif %}">
-                              <a class="nav-link dropdown-item {% if lthree.children %}dropdown-toggle{% endif %}" {% if lthree.children %}
-                            data-bs-toggle="dropdown"
-                            data-bs-auto-close="inside"
-                            aria-expanded="false"{% endif %} href="{{ lthree.url }}">{{ lthree.name }}</a>
-                              {% if lthree.children %}
-                                <ul class="dropdown-menu bg-warning w-100 border-0 rounded-0">
-                                  <button type="button" class="btn-close position-absolute top-0 end-0 m-1" aria-label="Close"></button>
-                                  {% for lfour in lthree.children %}
-                                    {% if lfour.url %}
-                                      <li>
-                                        <a class="dropdown-item" href="{{ lfour.url }}">{{ lfour.name }}</a>
-                                      </li>
-                                    {% else %}
-                                      <li class="nav-item fw-bold px-3">{{ lfour.name }}</li>
-                                    {% endif %}
-                                  {% endfor %}
-                                </ul>
-                              {% else %}
-                              {% endif %}
-                            </li>
-                          {% endfor %}
-                        </ul>
-                      {% else %}
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
+              <ul class="list-unstyled d-flex flex-column align-content-start flex-sm-wrap flex-nowrap" style="max-height:450px;">
+                {% for ltwo in lone.children %}
+                  <li class="nav-item col-12 col-md-3">
+                    <a class="nav-link fw-bold" href="{{ ltwo.url }}">{{ ltwo.name }}</a>
+                    {% if ltwo.children or ltwo.url%}
+                      <ul class="list-unstyled">
+                        {% for lthree in ltwo.children %}
+                          <li class="nav-item {% if lthree.children %}dropdown dropend{% endif %}">
+                            <a class="nav-link dropdown-item {% if lthree.children %}dropdown-toggle{% endif %}" {% if lthree.children %} data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"{% endif %} href="{{ lthree.url }}">{{ lthree.name }}</a>
+                            {% if lthree.children %}
+                              <ul class="dropdown-menu bg-warning w-100 border-0 rounded-0">
+                                <button type="button" class="btn-close position-absolute top-0 end-0 m-1" aria-label="Close"></button>
+                                {% for lfour in lthree.children %}
+                                  {% if lfour.url %}
+                                    <li>
+                                      <a class="nav-link dropdown-item" href="{{ lfour.url }}">{{ lfour.name }}</a>
+                                    </li>
+                                  {% else %}
+                                    <li class="nav-link fw-bold">{{ lfour.name }}</li>
+                                  {% endif %}
+                                {% endfor %}
+                              </ul>
+                            {% else %}
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% else %}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+
             </div>
           </li>
         {% endfor %}
