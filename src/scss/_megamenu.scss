@@ -18,9 +18,15 @@ body {
 
 }
 
-li.has-megamenu:hover {
-  border-bottom: 3px solid orange;
+@include media-breakpoint-up(md) {
+  .megamenu>ul {
+    max-height: 450px;
+  }
 }
+
+// li.has-megamenu:hover {
+//   border-bottom: 3px solid orange;
+// }
 
 // .dropdown:hover>.dropdown-menu {
 //   display: block;
