@@ -2,10 +2,23 @@
 
 import * as Popper from "@popperjs/core"
 import * as bootstrap from 'bootstrap'
-import $ from 'jquery'
+import $ from "jquery"
+import Chocolat from "chocolat"
 
 window.$ = window.jQuery = $
 
+
+Chocolat(document.querySelectorAll('#lightbox .chocolat-image'), {
+  loop: false,
+  imageSize: 'contain',
+  allowFullScreen: true
+});
+
+Chocolat(document.querySelectorAll('#lightbox2 .chocolat-image'), {
+  loop: true,
+  imageSize: 'contain',
+  allowFullScreen: true
+})
 
 
 $(function () {
