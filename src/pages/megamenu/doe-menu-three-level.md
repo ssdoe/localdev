@@ -3,6 +3,7 @@ layout: uljson
 title: Doe Menu Three Level
 eleventyNavigation:
   key: doemenuthree
+  parent: Megamenu
   order: 1
 ---
 

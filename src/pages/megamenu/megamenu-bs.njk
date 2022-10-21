@@ -1,0 +1,82 @@
+---
+layout: base
+title: Megamenu Bootstrap
+eleventyNavigation:
+  key: Megamenu Bootstrap
+  parent: Megamenu
+  order: 1
+---
+
+<h1>{{ title }}</h1>
+
+{# {% macro menuItem(item) %}
+  <li class="nav-item">
+    {% if item.url and item.children %}
+      <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+    {% else %}
+      <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+    {% endif %}
+    {% if item.children %}
+      <ul class="list-unstyled border border-danger">
+        {% for item in item.children %}
+          {{ menuItem(item) }}
+        {% endfor %}
+    </ul>
+  {% endif %}
+</li>
+{% endmacro %} #}
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+      <ul class="nav navbar-nav">
+        {% for levelone in menu %}
+          <li class="nav-item dropdown has-megamenu ">
+            {# <a class="nav-link" href="{{ levelone.url }}">{{levelone.name }}</a> #}
+            <a class="nav-link dropdown-toggle" href="{{ levelone.url }}" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              {# <span class="visually-hidden">Toggle Dropdown</span> #}
+              {{levelone.name }}
+            </a>
+            <div class="dropdown-menu megamenu rounded-0 bg-light border-0" role="menu">
+              <ul class="list-unstyled d-flex flex-column align-content-start flex-sm-wrap flex-nowrap">
+                {% for leveltwo in levelone.children %}
+                  <li class="nav-item col-12 col-md-3">
+                    <a class="nav-link fw-bold" href="{{ leveltwo.url }}">{{ leveltwo.name }}</a>
+                    {% if leveltwo.children or leveltwo.url%}
+                      <ul class="list-unstyled">
+                        {% for levelthree in leveltwo.children %}
+                          <li class="nav-item {% if levelthree.children %}dropdown dropend{% endif %}">
+                            <a class="nav-link dropdown-item {% if levelthree.children %}dropdown-toggle{% endif %}" {% if levelthree.children %} data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"{% endif %} href="{{ levelthree.url }}">{{ levelthree.name }}</a>
+                            {% if levelthree.children %}
+                              <ul class="dropdown-menu bg-warning w-100 border-0 rounded-0">
+                                <button type="button" class="btn-close position-absolute top-0 end-0 m-1" aria-label="Close"></button>
+                                {% for levelfour in levelthree.children %}
+                                  {% if levelfour.url %}
+                                    <li>
+                                      <a class="nav-link dropdown-item" href="{{ levelfour.url }}">{{ levelfour.name }}</a>
+                                    </li>
+                                  {% else %}
+                                    <li class="nav-link fw-bold">{{ levelfour.name }}</li>
+                                  {% endif %}
+                                {% endfor %}
+                              </ul>
+                            {% else %}
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% else %}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

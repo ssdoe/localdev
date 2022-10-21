@@ -1,7 +1,19 @@
 $color-light: #e3d7c5;
 $color-dark: #2a2a2a;
 $color-accent: #000;
-$menu-link-padding: 5px 5px;
+$menu-link-padding: 5px 10px;
+$menu-height: 600px;
+
+* {
+  font-family: arial;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 nav {
   margin: 50px;
@@ -44,18 +56,17 @@ nav {
   }
 }
 
+.menu-bar {
+  background-color: $color-light;
+  display: flex;
+}
+
 .menu-link {
   padding: $menu-link-padding;
   &:hover {
     background: #fff;
   }
 }
-
-.menu-bar {
-  background-color: $color-light;
-  display: flex;
-}
-
 .menu {
   [aria-haspopup="true"] {
     ~ ul {
@@ -73,12 +84,14 @@ nav {
         ~ ul {
           display: flex;
           flex-direction: column;
-          flex-wrap: wrap;
-          background-color: $color-light;
+          align-items: flex-start;
+          // flex-wrap: wrap;
+          // background-color: $color-light;
           // min-width: 800px;
-          height: 600px;
-          position: absolute;
-          left: 0;
+          height: $menu-height;
+          // position: absolute;
+          // left: 0;
+          // width: 100%;
         }
       }
     }
@@ -93,9 +106,10 @@ nav {
           flex-wrap: wrap;
           background-color: $color-light;
           // min-width: 100%;
-          height: 600px;
+          height: $menu-height;
           position: absolute;
           left: 0;
+          // width: 100%;
         }
       }
     }
@@ -110,7 +124,7 @@ nav {
   color: orange;
 }
 .mega-menu--multiLevel li ul a:not(:has(+ ul)) {
-  color: blue;
+  color: black;
 }
 
 // .mega-menu--multiLevel a:has(+ul) {
