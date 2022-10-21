@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "chocolat": "^1.1.0",
+    "eleventy-plugin-mjml": "^1.0.1",
     "jquery": "^3.6.0"
   }
 }

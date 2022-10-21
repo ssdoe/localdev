@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss"); // needed for absoluteUrl feature
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { MjmlPlugin } = require("eleventy-plugin-mjml");
 
 // Base setup for builds, needed for og tags and correct image paths
 // (mostly for github pages deployment, see build-deploy.yaml)
@@ -65,6 +66,17 @@ module.exports = function (eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  eleventyConfig.addPlugin(MjmlPlugin, {
+    // if you want to use Nunjucks syntax within your MJML files, set to true
+    preprocessWithNunjucks: false,
+
+    // You can add Nunjucks filters here
+    // the key is the name of the filter, and the value is the function
+    nunjucksFilters: {
+      myImaginaryFilter: (value, param) => value,
+    },
+  });
 
   // Copy dist/ files from laravel mix
   eleventyConfig.addPassthroughCopy("dist/"); // path is relative from root

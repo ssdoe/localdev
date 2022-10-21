@@ -1,0 +1,19 @@
+---
+layout: base
+title: MJML
+eleventyNavigation:
+  key: mjml
+  order: 3
+---
+
+<h2>HTML EMAILS</h2>
+
+{% set navPages = collections.all | eleventyNavigation("mjml") %}
+
+<ul>
+  {%- for entry in navPages %}
+    <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+  {%- endfor %}
+</ul>
