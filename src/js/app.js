@@ -3,7 +3,8 @@
 import * as Popper from "@popperjs/core"
 import * as bootstrap from 'bootstrap'
 import $ from "jquery"
-import Chocolat from "chocolat"
+import Chocolat from "chocolat";
+import "./employee-card";
 
 window.$ = window.jQuery = $
 
