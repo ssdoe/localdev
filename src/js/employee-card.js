@@ -13,10 +13,10 @@ template.innerHTML = `
 
 </style>
 <div class="employee-card">
-  <img width="100"/>
+  <img width="150"/>
   <div>
     <h3 class="border"></h3>
-    <div class="details">
+    <div class="details p-3">
       <p><slot name="id"/></p>
       <p><slot name="job title"/></p>
       <p><slot name="email"/></p>
@@ -26,21 +26,21 @@ template.innerHTML = `
 </div>`;
 
 class EmployeeCard extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
-        this.shadowRoot.querySelector('img').src = this.getAttribute('avatar');
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
+    this.shadowRoot.querySelector('img').src = this.getAttribute('avatar');
+  }
 
-    connectedCallback() {
-        this.h3 = this.getAttribute("name")
-        this.render();
-    }
+  connectedCallback() {
+    this.h3 = this.getAttribute("name")
+    this.render();
+  }
 
-    render() {
-        this.h3;
-    }
+  render() {
+    this.h3;
+  }
 }
 window.customElements.define('employee-card', EmployeeCard);
