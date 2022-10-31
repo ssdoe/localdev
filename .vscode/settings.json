@@ -1,18 +1,17 @@
 {
     "editor.formatOnSave": true,
     "html.suggest.html5": true,
+    "files.associations": {
+        "*.njk": "njk"
+    },
     "emmet.includeLanguages": {
         "njk": "html"
     },
-    "files.associations": {
-        "*.njk": "nunjucks"
-    },
     "workbench.colorCustomizations": {
         "activityBar.background": "#ff9900",
+        "activityBar.foreground": "#000",
         "titleBar.activeBackground": "#f90",
-        "titleBar.activeForeground": "#fff"
+        "titleBar.activeForeground": "#000"
     },
-    "[nunjucks]": {
-        "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
-    }
+    "editor.fontSize": 14
 }
