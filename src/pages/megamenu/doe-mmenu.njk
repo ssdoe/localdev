@@ -1,0 +1,42 @@
+---
+layout: base
+title: Doe MMenu
+eleventyNavigation:
+  key: Doe MMenu
+  parent: Megamenu
+  order: 1
+---
+
+<h1>Menu</h1>
+
+{% macro menuItem(item) %}
+  <li role="menuitem">
+    {% if item.url and item.children %}
+      <a class="" aria-haspopup="true" href="{{ item.url }}">{{ item.name }}</a>
+    {% else %}
+      <a class="" href="{{ item.url }}">{{ item.name }}</a>
+    {% endif %}
+    {% if item.children %}
+      <ul class="" aria-hidden="false" role="menubar">
+        {% for item in item.children %}
+          {{ menuItem(item) }}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </li>
+{% endmacro %}
+
+<nav>
+  <ul class="">
+    {% for lone in menu %}
+      <li>
+        <a class="menu-link menu-bar-link" href="{{ lone.url }}" aria-haspopup="true" tabindex="0">{{lone.name }}</a>
+        <ul class="">
+          {% for item in lone.children %}
+            {{ menuItem(item) }}
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

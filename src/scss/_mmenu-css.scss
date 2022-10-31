@@ -1,0 +1,44 @@
+ul {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  float: left;
+}
+
+li {
+  float: left;
+  display: inline;
+  position: relative;
+  width: 200px;
+  list-style: none;
+  padding: 4px;
+}
+
+ul ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #f1f1f1;
+  display: none;
+}
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+  background: #f2f2f2;
+}
+
+ul ul ul ul {
+  left: 100%;
+  top: 0;
+  background: #f2f2f2;
+}
+
+
+li:hover {
+  background-color: lightyellow;
+
+  > ul {
+    display: block;
+  }
+}
