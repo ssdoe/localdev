@@ -8,7 +8,6 @@ eleventyNavigation:
 ---
 
 <h1>Menu</h1>
-
 {% macro menuItem(item) %}
   <li role="menuitem">
     {% if item.url and item.children %}
@@ -21,25 +20,26 @@ eleventyNavigation:
         {% for item in item.children %}
           {{ menuItem(item) }}
         {% endfor %}
-    </ul>
-  {% endif %}
-</li>
-{% endmacro %}
-
-<nav>
-<a href="javascript:void(0);" class="mobile-menu-trigger">Open mobile menu</a>
-<ul class="menu menu-bar">
-  {% for lone in menu %}
-    <li>
-      <a class="menu-link menu-bar-link" href="javascript:void(0);" aria-haspopup="true" tabindex="0">{{lone.name }}</a>
-      <ul class="mega-menu mega-menu--multiLevel">
-        {% for item in lone.children %}
-          {{ menuItem(item) }}
-        {% endfor %}
       </ul>
-    </li>
-  {% endfor %}
-</ul>
+    {% endif %}
+  </li>
+{% endmacro %}
+<nav>
+  <a href="javascript:void(0);" class="mobile-menu-trigger">Open mobile menu</a>
+  <ul class="menu menu-bar">
+    {% for lone in menu %}
+      <li>
+        <a class="menu-link menu-bar-link" href="javascript:void(0);" aria-haspopup="true" tabindex="0">{{ lone.name }}</a>
+        <ul class="mega-menu mega-menu--multiLevel">
+          {% for item in lone.children %}
+            {{ menuItem(item) }}
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
-
-{# <svg stroke="orange" xmlns="http://www.w3.org/2000/svg" width="7.32" height="11.91" viewBox="0 0 7.32 11.91" aria-hidden="true"> <polyline fill="none" stroke-width="2px" points="0.71 11.21 5.91 5.91 0.71 0.71" class=""></polyline> </svg> #}
+{# <svg stroke="orange" xmlns="http://www.w3.org/2000/svg" width="7.32" height="11.91" viewBox="0 0 7.32 11.91"
+  aria-hidden="true">
+  <polyline fill="none" stroke-width="2px" points="0.71 11.21 5.91 5.91 0.71 0.71" class=""></polyline>
+</svg> #}
