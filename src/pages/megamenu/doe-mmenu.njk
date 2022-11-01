@@ -8,7 +8,6 @@ eleventyNavigation:
 ---
 
 <h1>Menu</h1>
-
 {% macro menuItem(item) %}
   <li role="menuitem">
     {% if item.url and item.children %}
@@ -25,12 +24,11 @@ eleventyNavigation:
     {% endif %}
   </li>
 {% endmacro %}
-
 <nav>
-  <ul class="">
+  <ul class="mmenu">
     {% for lone in menu %}
       <li>
-        <a class="menu-link menu-bar-link" href="{{ lone.url }}" aria-haspopup="true" tabindex="0">{{lone.name }}</a>
+        <a class="menu-link menu-bar-link" href="{{ lone.url }}" aria-haspopup="true" tabindex="0">{{ lone.name }}</a>
         <ul class="">
           {% for item in lone.children %}
             {{ menuItem(item) }}

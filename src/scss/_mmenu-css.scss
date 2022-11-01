@@ -1,11 +1,14 @@
-ul {
+.mmenu {
+  ul {
   padding: 0;
   margin: 0;
   background: #fff;
   float: left;
 }
 
-li {
+}
+
+.mmenu li {
   float: left;
   display: inline;
   position: relative;
@@ -38,7 +41,7 @@ ul ul ul ul {
 li:hover {
   background-color: lightyellow;
 
-  > ul {
+  >ul {
     display: block;
   }
 }
